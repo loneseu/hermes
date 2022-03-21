@@ -11,6 +11,9 @@
     <modules>
         <module>hermes-gateway</module>
         <module>hermes-user</module>
+        <module>hermes-entity</module>
+        <module>hermes-service</module>
+        <module>hermes-application</module>
     </modules>
 
 
@@ -71,6 +74,12 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- mysql -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.28</version>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>
