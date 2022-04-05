@@ -1,4 +1,5 @@
-package cn.edu.seu.lone.hermes.user;
+package cn.edu.seu.lone.hermes.fiance;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,9 +13,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("cn.edu.seu.lone")
 @ComponentScan("cn.edu.seu.lone")
 @EntityScan("cn.edu.seu.lone")
-public class HermesUserApplication {
-
+public class HermesFinanceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(HermesUserApplication.class, args);
+        SpringApplication.run(HermesFinanceApplication.class, args);
     }
 }
