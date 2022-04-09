@@ -14,4 +14,6 @@ public interface TradeUserRepository extends Repository<TradeUser, Long> {
     TradeUser getById(Long id);
 
     TradeUser save(TradeUser tradeUser);
+
+    TradeUser findTradeUserByUserNo(String userNo);
 }
