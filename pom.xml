@@ -15,6 +15,7 @@
         <module>hermes-service</module>
         <module>hermes-application</module>
         <module>hermes-finance</module>
+        <module>hermes-common</module>
     </modules>
 
 

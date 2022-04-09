@@ -1,4 +1,4 @@
-package cn.edu.seu.lone.entity.finance;
+package cn.edu.seu.lone.entity;
 
 import lombok.Data;
 

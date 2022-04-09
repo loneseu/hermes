@@ -1,7 +1,7 @@
 package cn.edu.seu.lone.hermes.fiance.controller;
 
-import cn.edu.seu.lone.entity.finance.TransactionRecord;
-import cn.edu.seu.lone.entity.finance.repository.TransactionRecordRepository;
+import cn.edu.seu.lone.entity.TransactionRecord;
+import cn.edu.seu.lone.entity.repository.TransactionRecordRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -9,8 +9,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

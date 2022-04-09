@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hermes-service</artifactId>
+    <artifactId>hermes-common</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,18 +17,22 @@
     </properties>
 
     <dependencies>
-        <!-- 项目模块引用 -->
+        <!-- Gson 组件 -->
         <dependency>
-            <groupId>cn.edu.seu.lone</groupId>
-            <artifactId>hermes-entity</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>cn.edu.seu.lone</groupId>
-            <artifactId>hermes-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
+        <!-- 自动化校验 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.16.Final</version>
         </dependency>
     </dependencies>
-
 </project>
