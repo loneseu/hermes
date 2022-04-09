@@ -1,7 +1,7 @@
 package cn.edu.seu.lone.hermes.user.controller;
 
-import cn.edu.seu.lone.entity.user.User;
-import cn.edu.seu.lone.entity.user.repository.UserRepository;
+import cn.edu.seu.lone.entity.TradeUser;
+import cn.edu.seu.lone.entity.repository.TradeUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class HelloController {
 
-    private final UserRepository userRepository;
+    private final TradeUserRepository userRepository;
 
 
     @RequestMapping("/welcome")
@@ -22,7 +22,7 @@ public class HelloController {
 
 
     @RequestMapping("/name/{name}")
-    public User getUserByName(@PathVariable String name) {
+    public TradeUser getUserByName(@PathVariable String name) {
         return userRepository.findUserByName(name);
     }
 }
