@@ -8,9 +8,9 @@ import org.springframework.security.oauth2.provider.client.JdbcClientDetailsServ
 import org.springframework.cache.annotation.Cacheable;
 import javax.sql.DataSource;
 
-public class AuthClientDetailService extends JdbcClientDetailsService {
+public class AuthClientDetailsService extends JdbcClientDetailsService {
 
-    public AuthClientDetailService(DataSource dataSource) {
+    public AuthClientDetailsService(DataSource dataSource) {
         super(dataSource);
     }
 

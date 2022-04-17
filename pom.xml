@@ -17,6 +17,7 @@
         <module>hermes-finance</module>
         <module>hermes-common</module>
         <module>hermes-auth</module>
+        <module>hermes-cache</module>
     </modules>
 
 
@@ -29,7 +30,7 @@
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
-        <spring-cloud-starter.version>2.1.1.RELEASE</spring-cloud-starter.version>
+        <spring-cloud-starter.version>2.2.5.RELEASE</spring-cloud-starter.version>
     </properties>
 
     <dependencies>

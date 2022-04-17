@@ -17,4 +17,23 @@ public class GlobalConstants {
      */
     public static final String OAUTH_PREFIX_KEY = "oauth";
 
+    /**
+     * 缓存 -- 用于token store的存取前缀
+     */
+    public static final String OAUTH_CLIENT_CREDENTIALS = "client_credentials";
+
+    /**
+     * 缓存 -- 用户ID前缀
+     */
+    public static final String OAUTH_DETAILS_USER_ID = "user_id";
+    /**
+     * 缓存 -- 用户名称前缀
+     */
+    public static final String OAUTH_DETAILS_USERNAME = "user_name";
+
+    /**
+     * 缓存 -- 用户登录信息
+     */
+    public static final String OAUTH_DETAILS_LOGIN_INFO = "login_info";
+
 }

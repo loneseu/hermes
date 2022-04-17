@@ -1,6 +1,6 @@
 package cn.edu.seu.lone.auth.service;
 
-import cn.edu.seu.lone.auth.bo.OAuthTradeUser;
+import cn.edu.seu.lone.auth.bo.OAuthUser;
 import cn.edu.seu.lone.common.utils.constants.GlobalConstants;
 import cn.edu.seu.lone.entity.TradeUser;
 import cn.edu.seu.lone.entity.repository.TradeUserRepository;
@@ -16,7 +16,7 @@ import java.util.Objects;
 
 @Service
 @AllArgsConstructor
-public class AuthTradeUserDetailService implements UserDetailsService {
+public class AuthUserDetailsService implements UserDetailsService {
 
     private final TradeUserRepository tradeUserRepository;
 
@@ -37,9 +37,10 @@ public class AuthTradeUserDetailService implements UserDetailsService {
         }
 
         // 3. 对用户信息进行封装
-        UserDetails userDetails = new OAuthTradeUser(tradeUser);
+        UserDetails userDetails = new OAuthUser(tradeUser);
 
         // 4. 将封装的信息放入缓存中
+        assert cache != null;
         cache.put(userNo, userDetails);
 
         return userDetails;
